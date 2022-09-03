@@ -1,4 +1,3 @@
-.PHONY= clean run memleak
 
 #=======================#
 #== Compiler Binaries ==#
@@ -50,14 +49,11 @@ $(TARGET): $(OBJ)
 #== Miscellaneous Targets ==#
 #===========================#
 
+build:
+	sudo apt-get install -y build-essential cmake libpthread-stubs0-dev libgtk-3-dev 
+
 run:
 	./$(TARGET)
-
-memleak: $(TARGET)
-	valgrind $(VFLAGS) ./$^
-
-show:
-	@echo $(OBJ)
 
 mkobjdir:
 	mkdir -p $(SRC_DIR)/$(OBJ_DIR)
@@ -65,3 +61,5 @@ mkobjdir:
 
 clean:
 	rm -rf $(TARGET) $(OBJ)
+
+.PHONY= cbuild run mkobjdir clean

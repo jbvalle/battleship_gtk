@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../gtk/gtk.h"
+#include "gtk/gtk.h"
 #include "../inc/battlefield.h"
 
 #define COLS 10

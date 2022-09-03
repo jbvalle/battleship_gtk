@@ -2,8 +2,9 @@
 #define BATTLE_FIELD_H
 #define COLS 10
 #define ROWS 10
+#define UNUSED(x) (void)(x)
 
-#include "../gtk/gtk.h"
+#include "gtk/gtk.h"
 
 
 typedef struct Battlefield{

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../gtk/gtk.h"
+#include "gtk/gtk.h"
 #include "../inc/battlefield.h"
 #include <string.h>
 #include <strings.h>
@@ -9,6 +9,8 @@
 #define ROWS 10
 
 void get_user_entry_text(GtkWidget *widget, gpointer data){
+
+        UNUSED(widget);
 
         Battlefield *battlefield_instance = data;
 
