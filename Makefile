@@ -51,6 +51,9 @@ $(TARGET): $(OBJ)
 
 build:
 	sudo apt-get install -y build-essential cmake libpthread-stubs0-dev libgtk-3-dev 
+	chmod +x switch_gcc.sh
+	./switch_gcc
+	export DISPLAY="127.0.0.1:10.0"
 
 run:
 	./$(TARGET)
