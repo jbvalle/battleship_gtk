@@ -35,7 +35,7 @@ SRCS=$(wildcard $(SRC_DIR)/*.c)
 
 OBJ=$(patsubst $(SRC_DIR)/%.c, $(SRC_DIR)/$(OBJ_DIR)/%.o, $(SRCS))
 
-TARGET=main
+TARGET=battleship
 
 all: $(OBJ) $(TARGET) run
 

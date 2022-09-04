@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/home/osboxes/Coding/003_battleship_gtk/battleship_gtk/battleship
+Name=Battleship
+Icon=/home/osboxes/Coding/003_battleship_gtk/battleship_gtk/img/ship.png
